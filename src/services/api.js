@@ -3,7 +3,7 @@ import { getToken } from "../context/AuthContext";
 
 const api = axios.create({
   baseURL:
-    "https://38ba-2409-40d4-106e-7593-d58-18f8-70d1-d6f2.ngrok-free.app/api",
+    "https://lb-cms.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
     "ngrok-skip-browser-warning": "true", // Bypass NGROK browser warning
