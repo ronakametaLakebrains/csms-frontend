@@ -1,7 +1,6 @@
 import { Card, Box, Typography, IconButton } from "@mui/material";
 import BoltIcon from "@mui/icons-material/Bolt";
 import EvStationIcon from "@mui/icons-material/EvStation";
-import ToggleOnIcon from "@mui/icons-material/ToggleOn";
 
 // Define colors for different statuses
 const getStatusColor = (status) => {

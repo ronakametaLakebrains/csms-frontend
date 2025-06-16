@@ -29,8 +29,9 @@ import StationsDetail from "./features/stations/StationsDetail";
 import AddTariffForm from "./features/tariff/AddTariffForm";
 import AddPartnerForm from "./features/Partners/AddPartnerForm";
 import { AuthProvider } from "./context/AuthContext";
-import AddChargerForm from "./features/chargers/addChargerForm";
+
 import OccppOperations from "./ui/OccppOperations";
+import AddChargerForm from "./features/chargers/AddChargerForm.jsx";
 
 
 const queryClient = new QueryClient({
