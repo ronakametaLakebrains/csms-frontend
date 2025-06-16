@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StationsTable from "../features/Stations/StationsTable";
+import StationsTable from "../features/stations/StationsTable";
 import CustomTable from "../ui/CustomTable";
 import CustomHeading from "../ui/CustomHeading";
 import AutocompleteHint from "../ui/AutocompleteHint";
