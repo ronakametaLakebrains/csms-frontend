@@ -5,9 +5,9 @@ import { Stack } from "@mui/material";
 
 import CustomButton from "../ui/CustomButton";
 import CustomHeading from "../ui/CustomHeading";
-import TransactionsTable from "../features/Transactions/TransactionsTable";
+// import TransactionsTable from "../features/transactions/TransactionsTable";
 import AutocompleteHint from "../ui/AutocompleteHint";
-
+import TransactionsTable from '../features/transactions/TransactionsTable'
 const Chargeroptions = [
   { label: "Charger 1", value: 1 },
   { label: "Charger 2", value: 2 },

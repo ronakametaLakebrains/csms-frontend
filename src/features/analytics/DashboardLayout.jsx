@@ -3,10 +3,7 @@
 import Spinner from "../../ui/Spinner";
 import Stats from "./Stats";
 import { styled } from "@mui/material/styles";
-// import { useRecentStays } from "./useRecentStays";
-// import { useCabin } from "../cabins/useCabin";
-// import SalesChart from "./SalesChart";
-// import DurationChart from "./DurationChart";
+import Map from "./Map";
 
 const StyledDashboardLayout = styled.div`
   display: grid;
@@ -27,3 +24,4 @@ function DashboardLayout() {
 }
 
 export default DashboardLayout;
+

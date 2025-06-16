@@ -1,4 +1,3 @@
-
 import CustomTable, {
   TableHead,
   TableBody,
@@ -11,10 +10,6 @@ import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { styled } from "@mui/system";
 
-import CustomFilter from "../../ui/CustomFilter";
-import Spinner from "../../ui/Spinner";
-import Error from "../../ui/Error";
-import Pagination from "../../ui/Pagination";
 import { fetchChargers } from "../../services/apiChargers";
 import MoreVertOutlinedIcon from "@mui/icons-material/MoreVertOutlined";
 
@@ -42,11 +37,11 @@ const ChargerTable = () => {
   } = useQuery({
     queryKey: ["chargers"],
     queryFn: fetchChargers,
-    // refetchInterval: 2000,
   });
 
-  if (isLoading) return <Spinner />;
-  if (error) return <Error error={error} />;
+  if (isLoading) return null;
+  if (error) return null;
+
   console.log(chargers);
 
   //adding dummy data
@@ -424,10 +419,12 @@ export default ChargerTable;
 //             <StyledTableCell>Owner Name</StyledTableCell>
 //             <StyledTableCell>Location</StyledTableCell>
 //             <StyledTableCell>Power Consumption</StyledTableCell>
-//             <Stack direction="row" spacing={1}>
-//               <CustomFilter options={options} label="" />
-//               <CustomFilter options={options2} label="" />
-//             </Stack>
+//             <StyledTableCell>
+//               <Stack direction="row" spacing={1}>
+//                 <CustomFilter options={options} label="" />
+//                 <CustomFilter options={options2} label="" />
+//               </Stack>
+//             </StyledTableCell>
 //           </TableRow>
 //         </StyledTableHead>
 
